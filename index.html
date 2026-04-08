@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Related Papers</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f5f1e8;
+      --card: #fffdf8;
+      --ink: #1e2430;
+      --muted: #5e6472;
+      --accent: #8c3d2f;
+      --border: #d9cdb8;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Georgia, "Times New Roman", serif;
+      background:
+        radial-gradient(circle at top left, rgba(140, 61, 47, 0.08), transparent 30%),
+        linear-gradient(180deg, var(--bg), #efe7d8);
+      color: var(--ink);
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+
+    main {
+      width: min(760px, 100%);
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 32px 28px;
+      box-shadow: 0 16px 40px rgba(30, 36, 48, 0.08);
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(2rem, 3vw, 2.6rem);
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+    }
+
+    p {
+      margin: 0 0 24px;
+      color: var(--muted);
+      font-size: 1.05rem;
+      line-height: 1.55;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 14px;
+    }
+
+    li {
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 18px 18px 16px;
+      background: linear-gradient(180deg, rgba(245, 241, 232, 0.75), rgba(255, 253, 248, 1));
+    }
+
+    .label {
+      margin: 0 0 6px;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+    }
+
+    a {
+      color: var(--ink);
+      word-break: break-word;
+      text-decoration-thickness: 0.08em;
+      text-underline-offset: 0.15em;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Related Papers</h1>
+    <p>Scan the poster QR code or use the links below to access the three related papers directly.</p>
+    <ul>
+      <li>
+        <div class="label">Published Article</div>
+        <a href="https://journals.aps.org/prapplied/abstract/10.1103/lysc-phz4">https://journals.aps.org/prapplied/abstract/10.1103/lysc-phz4</a>
+      </li>
+      <li>
+        <div class="label">arXiv Preprint</div>
+        <a href="https://arxiv.org/abs/2603.02433">https://arxiv.org/abs/2603.02433</a>
+      </li>
+      <li>
+        <div class="label">arXiv Preprint</div>
+        <a href="https://arxiv.org/abs/2512.20453">https://arxiv.org/abs/2512.20453</a>
+      </li>
+    </ul>
+  </main>
+</body>
+</html>
